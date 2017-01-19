@@ -1,0 +1,155 @@
+<link rel="stylesheet" id="google_montserrat-css" href="//fonts.googleapis.com/css?family=Montserrat" type="text/css" media="all">
+  <%= render "shared/banner2" %>
+  
+    <% @projects.each do |project| %>
+        <% if project.id % 2 == 1 %>
+            <section> 
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="row">
+                    <div class="col-md-2">
+                    </div>
+                    <div class="col-md-5">
+                        <br><br>
+    <div class="css-mb with-glare">
+      <div class="mb-display-position">
+        <div class="mb-display">
+          <div class="mb-screen-position">
+            <div class="mb-screen">
+            
+              <!-- Image (aspect 16:10 recommended, but not required). You might also want to change or remove the background color, in case the picture is not big enough, or rendering is off  -->
+              <img src=<%= project.image %> alt="example image" />
+              <!-- Image By André Freitas from unsplash.com -->
+    
+              <!-- Youtube - don't forget to remove glare -->
+              <!-- <iframe width="960" height="480" src="http://www.youtube.com/embed/GUEZCxBcM78?rel=0&amp;showinfo=0&amp;iv_load_policy=3&amp;controls=2" frameborder="0"></iframe> -->
+              <!-- Notice: Youtube has some toruble with embed players and gives consol errors -->
+    
+              <!-- Iframe, simple website - don't forget to remove glare -->
+              <!-- <iframe src="http://example.com" frameborder="0"></iframe> -->
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mb-body"></div>
+      <div class="mb-bottom-cover"></div>
+    </div>
+                      <%= render "shared/mokup" %>
+                    </div>
+                    <div class="col-md-3">
+                        
+                          <h2><%=  project.name %></h2>
+                          <p><%=  project.tagline %></p>
+                        <div class="div-btn"><%= link_to "link", project.link, class:"btn btn-more pinky" %></div>
+                    </div>
+                     <div class="col-md-2">
+                    </div>
+    
+                </div>
+                   
+            </div>
+        </section>
+        <% else %>
+            <section> 
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="row">
+                    <div class="col-md-2">
+                    </div>
+                     <div class="col-md-3 text-right">
+                        
+                          <h2><%=  project.name %></h2>
+                          <p><%=  project.tagline %></p>
+                        <div class="div-btn"><%= link_to "link", project.link, class:"btn btn-more blue" %></div>
+                    </div>
+                    <div class="col-md-5">
+                        <br><br>
+    <div class="css-mb with-glare">
+      <div class="mb-display-position">
+        <div class="mb-display">
+          <div class="mb-screen-position">
+            <div class="mb-screen">
+            
+              <!-- Image (aspect 16:10 recommended, but not required). You might also want to change or remove the background color, in case the picture is not big enough, or rendering is off  -->
+              <img src=<%= project.image %> alt="example image" />
+              <!-- Image By André Freitas from unsplash.com -->
+    
+              <!-- Youtube - don't forget to remove glare -->
+              <!-- <iframe width="960" height="480" src="http://www.youtube.com/embed/GUEZCxBcM78?rel=0&amp;showinfo=0&amp;iv_load_policy=3&amp;controls=2" frameborder="0"></iframe> -->
+              <!-- Notice: Youtube has some toruble with embed players and gives consol errors -->
+    
+              <!-- Iframe, simple website - don't forget to remove glare -->
+              <!-- <iframe src="http://example.com" frameborder="0"></iframe> -->
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mb-body"></div>
+      <div class="mb-bottom-cover"></div>
+    </div>
+                      <%= render "shared/mokup" %>
+                    </div>
+                   
+                     <div class="col-md-2">
+                    </div>
+    
+                </div>
+                   
+            </div>
+        </section>
+        <% end %>
+    <% end %>
+    <br>    <br>    <br><br>    <br>    <br><br>    <br>    <br><br>    <br>    <br><br>    <br>    <br><br>    <br>    <br>
+    
+    
+    <style>.div-btn{padding:10px 30px 30px 30px;}
+    .btn-more{padding:0px 30px 30px 30px; webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    margin: 0px;
+    padding: 12px 24px;
+    border: 1px solid #a37ab6;
+    background: none;
+    display: inline-block;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: 'Montserrat';
+    line-height: 22px;
+    cursor: pointer;
+    width: auto;
+    letter-spacing: 2px;
+    color: #c7aed4;
+    text-transform: uppercase;
+    font-size: 9px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;}
+       h2{ padding:20px 10px 10px 20px;
+    line-height: 1.4em;
+    color: #494848;
+    font-size: 24px;
+    line-height: 34px;
+    font-family: "Montserrat",Helvetica,Arial,sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    font-size: 1.5em;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+
+       }
+       .blue{border: 1px solid #74bee1;
+           color: #74bee1;
+       }
+       .pinky{border: 1px solid #a37ab6;
+           color: #c7aed4;
+       }
+    
+    p{padding:20px 10px 30px 20px;font-family: Helvetica;}
+    </style>

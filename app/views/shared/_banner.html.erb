@@ -1,0 +1,298 @@
+	<div class="rocket-ship--banner">
+		<div class="rocket-ship--ship">
+			<div class="rocket-ship--fuselage">
+				<svg x="0px" y="0px" viewBox="0 0 279 302.9">
+					<path fill-rule="evenodd" clip-rule="evenodd" fill="#ECE4F1" d="M59.9,218.5l1.9,19.1c0.9,6.9,2.1,13.6,3.4,19.9l3.8,15L34.1,282
+						l-0.7-6.4c-1.3-10.4-2.7-19.8-4.4-28.4l-0.6-2.6L59.9,218.5L59.9,218.5z M218.1,218.5l32.5,26.9l-1.6,6.8c-1.7,8.6-3.2,18-4.4,28.4
+						l-0.2,1.6l-35.4-9.6l3.8-15c1.3-6.4,2.5-13,3.4-19.9L218.1,218.5z"/>
+					<path fill-rule="evenodd" clip-rule="evenodd" fill="#A37AB6" d="M66.4,112.5h145.1l1,4.4c4.4,21.9,6.6,46.9,6.6,75.7
+						c0,32.3-4,60-10.8,83.1l-2.3,7.1h-67H72l-2.3-7.1c-6.9-23.1-10.8-50.8-10.8-83.1c0-28.9,2.1-53.9,6.6-75.7L66.4,112.5z"/>
+					<path fill-rule="evenodd" clip-rule="evenodd" fill="#C7AED4" d="M139,4.7l9.2,6.4c24.5,18.2,42.2,40.5,53.9,69.8l5.4,16.6H70.6
+						L76,80.9c11.6-29.3,29.4-51.6,53.9-69.8L139,4.7z"/>
+					<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#ECE4F1" points="70.4,97.5 207.6,97.5 209.6,104.2 211.5,112.5 
+						66.5,112.5 68.4,104.2 70.4,97.5 	"/>
+					<path fill-rule="evenodd" clip-rule="evenodd" fill="#ECE4F1" d="M91,145.4c0-26.5,21.5-47.9,48-47.9s48,21.5,48,47.9
+						s-21.5,47.9-48,47.9S91,171.9,91,145.4L91,145.4z"/>
+					<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M106.1,145.3c0-18.2,14.7-32.9,32.9-32.9s32.9,14.7,32.9,32.9
+						c0,18.2-14.7,32.9-32.9,32.9S106.1,163.5,106.1,145.3L106.1,145.3z"/>
+					<path fill-rule="evenodd" clip-rule="evenodd" fill="#C7AED4" d="M18.5,210.1l2.3,6.4c6.3,18.2,10.8,40.5,13.8,69.8l1.4,16.6H1
+						l1.4-16.6c3-29.3,7.5-51.6,13.8-69.8L18.5,210.1z"/>
+					<path fill-rule="evenodd" clip-rule="evenodd" fill="#C7AED4" d="M259.5,210.1l2.3,6.4c6.3,18.2,10.8,40.5,13.8,69.8l1.4,16.6
+						h-34.9l1.4-16.6c3-29.3,7.5-51.6,13.8-69.8L259.5,210.1z"/>
+					<path fill-rule="evenodd" clip-rule="evenodd" fill="#C7AED4" d="M139,210.1l2.3,6.4c6.2,18.2,10.7,40.5,13.7,69.8l1.4,16.6h-34.8
+						l1.4-16.6c3-29.3,7.5-51.6,13.7-69.8L139,210.1z"/>
+				</svg>
+			</div>
+			<div class="rocket-ship--contrail">
+				<div class="rocket-ship--tail">
+					<div class="rocket-ship--flame"></div>
+				</div>
+				<div class="rocket-ship--cloud">
+					<div class="rocket-ship--smoke -one"></div>
+					<div class="rocket-ship--smoke -two"></div>
+					<div class="rocket-ship--smoke -three"></div>
+					<div class="rocket-ship--smoke -four"></div>
+					<div class="rocket-ship--smoke -five"></div>
+					<div class="rocket-ship--smoke -six"></div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="rocket-ship--planet"></div>
+	</div>
+	<style>@-webkit-keyframes rocket-ship--ship-ani {
+  0%,
+  100% {
+    -webkit-transform:scale(1, 1);
+    transform:scale(1, 1);
+  }
+  50% {
+    -webkit-transform:scale(.95, 1.05);
+    transform:scale(.95, 1.05);
+  }
+}
+@keyframes rocket-ship--ship-ani {
+  0%,
+  100% {
+    transform:scale(1, 1);
+  }
+  50% {
+    transform:scale(.95, 1.05);
+  }
+}
+
+@-webkit-keyframes rocket-ship--smoke-ani {
+  0%,
+  100% {
+    -webkit-transform:scale(1);
+    transform:scale(1);
+  }
+  50% {
+    -webkit-transform:scale(0);
+    transform:scale(0);
+  }
+}
+@keyframes rocket-ship--smoke-ani {
+  0%,
+  100% {
+    transform:scale(1);
+  }
+  50% {
+    transform:scale(0);
+  }
+}
+
+@-webkit-keyframes rocket-ship--flame-ani {
+  0%,
+  25%,
+  60%,
+  100% {
+    border-width:4em 1em 0 1em;
+  }
+  10%,
+  90% {
+    border-width:2em 1em 0 1em;
+  }
+  40% {
+    border-width:3em 1em 0 1em;
+  }
+}
+@keyframes rocket-ship--flame-ani {
+  0%,
+  25%,
+  60%,
+  100% {
+    border-width:4em 1em 0 1em;
+  }
+  10%,
+  90% {
+    border-width:2em 1em 0 1em;
+  }
+  40% {
+    border-width:3em 1em 0 1em;
+  }
+}
+
+@-webkit-keyframes planet--rotate-ani {
+  0% {
+    -webkit-transform:rotate( 0deg );
+    transform:rotate( 0deg );
+  }
+  100% {
+    -webkit-transform:rotate( -360deg );
+    transform:rotate( -360deg );
+  }
+}
+@keyframes planet--rotate-ani {
+  0% {
+    transform:rotate( 0deg );
+  }
+  100% {
+    transform:rotate( -360deg );
+  }
+}
+
+.rocket-ship--banner {
+  display:block;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+  width:100%;
+  height:38em;
+  position:relative;
+  overflow:hidden;
+  border-bottom:1px solid #ddd;
+}
+.rocket-ship--banner::before {
+  content:"";
+  display:block;
+  width:100%;
+  height:33em;
+  position:absolute;
+  left:0;
+  bottom:0;
+  background-color:white;
+  border-width:1px 1px 0 1px;
+  border-style:solid;
+  border-color:#ddd;
+  border-radius:50% 50% 0 0 / 12em 12em 0 0;
+}
+
+.rocket-ship--banner * {
+  -webkit-box-sizing:inherit;
+  box-sizing:inherit;
+}
+
+.rocket-ship--ship {
+  position:absolute;
+  -webkit-transform:translate3d( 18em, -2em, 0 ) rotate(55deg);
+  transform:translate3d( 18em, -2em, 0 ) rotate(55deg);
+}
+.rocket-ship--fuselage {
+  display:block;
+  width:12em;
+  height:13em;
+  -webkit-transform-origin:center bottom;
+  transform-origin:center bottom;
+  -webkit-animation:rocket-ship--ship-ani .8s linear infinite;
+  animation:rocket-ship--ship-ani .8s linear infinite;
+}
+
+.rocket-ship--contrail {
+  position:absolute;
+  top:13.5em;
+  left:1em;
+}
+.rocket-ship--tail {
+  display:block;
+  width:4em;
+  height:11.5em;
+  background-color:#ece4f1;
+  position:absolute;
+  left:3em;
+  top:0;
+  -webkit-border-radius:0 0 2em 2em;
+  border-radius:0 0 2em 2em;
+}
+.rocket-ship--flame {
+  display:block;
+  width:0;
+  height:0;
+  position:absolute;
+  top:0;
+  left:1em;
+  border-width:4em 1em 0 1em;
+  border-style:solid;
+  border-color:#c7aed4 transparent;
+  -webkit-animation:rocket-ship--flame-ani 1.5s ease-in-out infinite;
+  animation:rocket-ship--flame-ani 1.5s ease-in-out infinite;
+}
+.rocket-ship--cloud {
+  position:absolute;
+  top:6em;
+  left:0;
+}
+.rocket-ship--smoke {
+  display:block;
+  width:4em;
+  height:4em;
+  position:absolute;
+  -webkit-border-radius:50%;
+  border-radius:50%;
+  background-color:#ece4f1;
+  -webkit-animation:rocket-ship--smoke-ani 2s ease infinite;
+  animation:rocket-ship--smoke-ani 2s ease infinite;
+}
+.rocket-ship--smoke.-one { left:.5em; top:1em; -webkit-animation-delay:.2s; animation-delay:.2s; }
+.rocket-ship--smoke.-two { left:5em; top:0; -webkit-animation-delay:.3s; animation-delay:.3s; }
+.rocket-ship--smoke.-three { left:6em; top:2em; -webkit-animation-delay:.5s; animation-delay:.5s; }
+.rocket-ship--smoke.-four { left:.5em; top:3em; -webkit-animation-delay:.9s; animation-delay:.9s; }
+.rocket-ship--smoke.-five { left:2em; top:4em; -webkit-animation-delay:.5s; animation-delay:.5s; }
+.rocket-ship--smoke.-six { left:4em; top:3em; -webkit-animation-delay:1s; animation-delay:1s; }
+
+.rocket-ship--planet {
+  display:block;
+  width:60em;
+  height:60em;
+
+  position:absolute;
+  left:50%;
+  bottom:-44em;
+
+  margin-left:-30em;
+
+
+  background-color:#c7aed4;
+  -webkit-border-radius:50%;
+  border-radius:50%;
+
+  -webkit-animation:planet--rotate-ani 14s linear infinite;
+  animation:planet--rotate-ani 14s linear infinite;
+}
+
+.rocket-ship--planet::after {
+  content: "";
+
+  display:block;
+  width:4em;
+  height:4em;
+
+  position:absolute;
+  left:50%;
+  top:50%;
+  margin-left:-2em;
+  margin-top:-2em;
+
+  border-radius:50%;
+
+  box-shadow:
+    10em 20em 0 0 #a37ab6,
+    20em 10em 0 2em #a37ab6,
+    21em -1em 0 1em #a37ab6,
+    18em -6em 0 0 #a37ab6,
+    17em -15em 0 2em #a37ab6,
+    8em -22em 0 0 #a37ab6,
+    -1em -24em 0 1em #a37ab6,
+    -10em -21em 0 0 #a37ab6,
+    -18em -12em 0 2em #a37ab6,
+    -23em 7em 0 1em #a37ab6,
+    -16em 18em 0 0 #a37ab6,
+    -24em 0 0 0 #a37ab6,
+
+    -4em 20em 0 2em #a37ab6;
+}
+
+.rocket-ship--banner {
+  font-size:4px;
+}
+@media screen and ( min-width:640px ) {
+  .rocket-ship--banner {
+    font-size:8px;
+  }
+}
+@media screen and ( min-width:960px ) {
+  .rocket-ship--banner {
+    font-size:10px;
+  }
+}
+
+.narvbar-default{background-color: white; }</style>
